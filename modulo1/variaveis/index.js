@@ -74,3 +74,13 @@ b = c;
 // Depois de trocados, teremos o seguinte resultado:
 console.log("O novo valor de a é", a) // O novo valor de a é 25
 console.log("O novo valor de b é", b) // O novo valor de b é 10
+
+//DESAFIO
+
+let n1 = Number(prompt("Digite um número:"));
+let n2 = Number(prompt("Digite outro número:"));
+
+console.log("O primeiro número somado ao segundo número resulta em:", Number(n1+n2));
+console.log("O primeiro número multiplicado pelo segundo número resulta em:", (n1*n2));
+
+
