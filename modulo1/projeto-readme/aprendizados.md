@@ -1,6 +1,4 @@
 # Minha primeira semana na Labenu
-variaveis
-Esta semana deu-se inicio o tão aguardado curso de desenvolvimento da Labenu. Visto que tentei dois cursos superiores na área tecnologica e não pude concluir deviso a tempo e dinheiro, estou muito animado pois sei que com esse horário de curso e a didatica adotada posso me dedicar suficientemente para virar um **desenvolvedor** profissional e alcançãr minha tão sonhada mudança de carreira.
-Nessa primerira semana já deu pra sentir que a pratica realmente ajuda na ficação do aprendizado, visto que embora os comandos sejam muitos, a pratica está me fazendo acostumar com eles e estamos apenas na primeira semana de curso. O GIT que sempre me pareceu muito complicado, ta começando a clarear pra mim, e sei que sua utilização adequada é fundamental para a vida profissional. No mais estou muito feliz de estar participando desse curso.
-Venho hoje espressar minha gratidão a Labenu por estar participando de um curso tão promissor para minha tão sonhada mudança de carreira. Nessa primeira semana deu pra perceber qu eo curso é totalmente voltado ao comércio, pelas práticas adotadas e levadas a sério por todos os instrutores, deu pra perceber também que existe um empenho de fomrar profissionais éticos e respeitaveis. Estou muito feliz de fazer parte da equipe e estar aprendendo coisas que levarei para sempre na minha carreira como **desenvolvedor**.
-master
+
+
+Venho hoje espressar minha gratidão a Labenu por estar participando de um curso tão promissor para minha tão sonhada mudança de carreira. Nessa primeira semana deu pra perceber que o curso é totalmente voltado ao mercado, pelas práticas adotadas e levadas a sério por todos os instrutores, deu pra perceber também que existe um empenho de fomrar profissionais éticos e respeitaveis. Estou muito feliz de fazer parte da equipe e estar aprendendo coisas que levarei para sempre na minha carreira como **desenvolvedor**.
