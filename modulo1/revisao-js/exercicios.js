@@ -170,16 +170,40 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 // EXERCÍCIO 14
 
 function retornaContasComSaldoAtualizado(contas) {
-    
-            
+    function soma(numeros){
+        let soma = 0
+        for (let i=0 ; i < numeros.length ; i++){
+            soma += numeros[i]
+        }
+        return soma
+    }
+                                            
+    for (let i=0 ; i < contas.length ; i++){
+            contas[i].saldoTotal -= soma(contas[i].compras)
+            contas[i].compras = []
+        }
+    return(contas)
 }
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  
+    function ordene(a,b) {
+        if (a.nome < b.nome){
+           return -1
+        }
+        else if (a.nome > b.nome){
+           return 1
+        }
+        else{
+            return 0
+        }
+      }
+      
+      return consultas.sort(ordene);
 }
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-   
+  
 }
+
