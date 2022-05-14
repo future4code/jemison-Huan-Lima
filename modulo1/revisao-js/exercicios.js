@@ -217,6 +217,7 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 // EXERCÍCIO 15B
 
 function retornaArrayOrdenadoPorData(consultas) {
+<<<<<<< HEAD
 
     //Para ordenar as datas é preciso convertelas em milissegundos utilizando Date.parse.
     //Após a ordenação correta é possivel retornar ao formato de data utilizando o new Date
@@ -260,4 +261,8 @@ function retornaArrayOrdenadoPorData(consultas) {
 }
     
     
+=======
+  
+}
+>>>>>>> dbd0acdb32f90f3a2c0c1c3703bc4d95b92f0230
 

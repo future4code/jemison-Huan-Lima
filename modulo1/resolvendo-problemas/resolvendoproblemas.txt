@@ -30,6 +30,10 @@ Testar o código com diversas possibilidades, usando as soluções mais obvias e
 Essa é a hora de lapidar o código, deixa-lo mais vistoso e entendivel possível, verificar se as variaveis 
 tem bons nomes, separar as funções e etapas de funcionamento do código, ou seja enxugar o código.
 Embora não pareça, respeitar esses passos na construção de um projeto é um grande adianto para que se tenha
+<<<<<<< HEAD
 exito, e que seja funcional, prático e eficiente.
+=======
+exito, e que seja funcional e prático.
+>>>>>>> dbd0acdb32f90f3a2c0c1c3703bc4d95b92f0230
 
 
