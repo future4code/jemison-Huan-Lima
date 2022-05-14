@@ -32,6 +32,18 @@ function retornaArrayOrdenado(array) {
 
 //DESAFIO 02
 
+function ordenaArrayComLoop(array){
+    for (let i = 1; i < array.length; i++){
+        for (let x = 0; x < i; x++){
+            if (array[i] < array[x]) {
+            let x = array[i];
+            array[i] = array[x];
+            array[x] = x;
+        }
+        }
+    }
+    return array
+}
 
 // EXERCÍCIO 04
 
@@ -203,7 +215,49 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 }
 
 // EXERCÍCIO 15B
+
 function retornaArrayOrdenadoPorData(consultas) {
-  
+
+    //Para ordenar as datas é preciso convertelas em milissegundos utilizando Date.parse.
+    //Após a ordenação correta é possivel retornar ao formato de data utilizando o new Date
+    //como na função milissegundosParaData
+
+    function converteDataStringParaDateEOrdena(objeto){
+        for(let i = 0 ; i < objeto.length ; i++){
+            let array = objeto[i].dataDaConsulta.split("/") // remove as barras 
+            let auxiliar = array[0]
+            array[0] = array[1] // inverte dia e mes para poder utilizar o Date.parse
+            array[1] = auxiliar
+            let novoArray = array
+            objeto[i].dataDaConsulta = Date.parse(novoArray) // converte a data em milissegundos contando de 01/01/1970
+        }
+            return milissegundosParaData(objeto.sort(ordene)) // retorna a data ordenada e formatada no padrão brasileiro
+        }
+
+    
+    function milissegundosParaData(objeto){
+        for(let i = 0 ; i < objeto.length ; i++){
+            let data = new Date(objeto[i].dataDaConsulta)
+            objeto[i].dataDaConsulta = data.toLocaleDateString() //Formata a hora no padrão brasileiro
+        }
+        return objeto
+    }
+
+    function ordene(a,b) {
+        if (a.dataDaConsulta < b.dataDaConsulta){
+           return -1
+        }
+        else if (a.dataDaConsulta > b.dataDaConsulta){
+           return 1
+        }
+        else{
+            return 0
+        }
+    }
+    
+    return converteDataStringParaDateEOrdena(consultas)
+    
 }
+    
+    
 
