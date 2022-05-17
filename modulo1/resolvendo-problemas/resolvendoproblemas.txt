@@ -1,0 +1,39 @@
+Faça um resumo sobre quais são os 7 passos fundamentais para a resolução de problemas 
+e como eles podem nos ajudar a solucionar nossos desafios de programação.
+
+Os sete passos fundamentais para a resolução de problemas de programação, são importantes principalmente 
+para evitar que fiquemos empacados no código, visto que seguindo o metódo é possivel deixar o código funcional 
+antes mesmo de termina-lo. Contudo muitas vezes passamos por cima de determinados passos e as vezes acabamos
+por ter que recomeçar todo um projeto, ocasionando retrabalho.
+Os sete passos mencionados são:
+1. Ter atenção no enunciado:
+Ter atenção no que o projeto pede, focar na essência e no que é indispensável, no foco do problema.
+Muitas vezes não nos atentamos para o que o projeto pede e deixamos passar simples processos.
+2. Retirar informações relevantes:
+Basicamente é essencial destacar o que é fundamental para o funcionamento do sistema, o que o sistema não
+pode deixar de fazer, então é sempre legal anotar as principais funcionalidades que o sistema deve ter,
+pensar em vaariaveis a palavras chave e condições necessarias, pois após o código estar funcionando 
+muitas vezes falta alguma funcionalidade que deveria existir.
+3. Pensar entradas e saidas:
+Importante sempre anotar as entradas necessarias, e como essas entradas vão acontecer, assim como as saidas
+que o sistema deve gerar e como elas devem ser geradas. Pensar em quais dados serao necessarios para gerar uma
+determinada informação e quais informações devem ser geradas.
+4. Fazer um esquema visual:
+É um metodo que facilita bastante na organização do código, gerar um fluxograma, com as funções, entradas, 
+saidas e as varias possibilidades que o codigo podem gerar.
+5. Criar um código feio:
+Sabendo o que deve ser feito, já é possivel partir para o código, se utilizando das ferramentas
+que dominamos melhor, construir um código funcional, independente da forma como foi feito.
+6. Testar: força bruta:
+Testar o código com diversas possibilidades, usando as soluções mais obvias e ferramentas mais básicas.
+7. Refatorar:
+Essa é a hora de lapidar o código, deixa-lo mais vistoso e entendivel possível, verificar se as variaveis 
+tem bons nomes, separar as funções e etapas de funcionamento do código, ou seja enxugar o código.
+Embora não pareça, respeitar esses passos na construção de um projeto é um grande adianto para que se tenha
+<<<<<<< HEAD
+exito, e que seja funcional, prático e eficiente.
+=======
+exito, e que seja funcional e prático.
+>>>>>>> dbd0acdb32f90f3a2c0c1c3703bc4d95b92f0230
+
+
