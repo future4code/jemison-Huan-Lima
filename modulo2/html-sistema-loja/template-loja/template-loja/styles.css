@@ -1,0 +1,68 @@
+body{
+    background-color: gainsboro;
+}
+header{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    color: black;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+nav{
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rosybrown;
+    padding-left: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+#paragrafo-do-header{
+    margin-left: 100px;
+    
+}
+#texto-de-abertura{
+    margin-top: 75px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
+footer{
+    color: grey;
+    font-weight: bolder;
+}
+#nome-da-loja{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    display: inline-block;
+}
+table{ 
+    background: rosybrown; 
+    border-color: blue; 
+    border-style: groove ; 
+ }
+ tr{
+    text-align: center; 
+    
+ }
+ th{
+    background: #666; 
+    color: white;
+    padding: 15px;
+    border-style: groove;
+ }
+ 
+ td{
+     border-style: groove;
+ }
+ form{
+     margin: 100px;
+ }
+label{
+    padding: 20px;
+}
