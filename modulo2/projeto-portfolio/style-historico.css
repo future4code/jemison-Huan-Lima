@@ -39,18 +39,14 @@ h2{
     text-align: center;
 }
 
-#nome-blackjack{
+#breve-historico{
+    font-size: 25px;
+    font-family: 'Wence';
     text-align: center;
-    font-family: 'Wence';
-}
-
-#texto-blackjack{
-    background-color: rgb(0, 95, 139);
-    font-family: 'Wence';
+    padding: 20px 20px;
     color: white;
-    font-size: 30px;
+    background-color: rgb(0, 95, 139);
 }
-
 
 footer{
     background-color: rgb(4, 4, 41);

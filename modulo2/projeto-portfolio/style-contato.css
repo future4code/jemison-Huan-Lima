@@ -39,17 +39,28 @@ h2{
     text-align: center;
 }
 
-#nome-blackjack{
-    text-align: center;
+#area{
+    position: relative;
+    left: 40%;
+    top: 50%;
+    width: 320px;
+    height: 270px;
+}
+#area #formulario{
+    position: absolute;
+    display: block;
+}
+
+legend{
+    font-style: bold;
     font-family: 'Wence';
 }
 
-#texto-blackjack{
-    background-color: rgb(0, 95, 139);
-    font-family: 'Wence';
-    color: white;
-    font-size: 30px;
+#tabela{
+    text-align: center;
+    margin: auto;
 }
+
 
 
 footer{
