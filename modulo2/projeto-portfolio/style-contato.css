@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(211, 206, 206);
+}
+
+
+#nome-principal{
+    
+    text-align: center;
+    font-family: 'Templar Shield 3D Block';
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#subtitulo{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 38px;
+    font-family:'Wence';
+}
+
+
+#menu-de-navegacao{
+    text-align: center;
+    background-color: rgb(4, 4, 41);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.fonte-link{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-family: 'Wence';
+    font-size: 20px;
+    
+}
+h2{
+    font-family: 'Templar Shield 3D Block';
+    font-size: 50px; 
+    text-align: center;
+}
+
+#area{
+    position: relative;
+    left: 40%;
+    top: 50%;
+    width: 320px;
+    height: 270px;
+}
+
+
+legend{
+    font-style: bold;
+    font-family: 'Wence';
+}
+
+#tabela{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+footer{
+    background-color: rgb(4, 4, 41);
+    color: white;
+    font-family: 'Wence';
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+}

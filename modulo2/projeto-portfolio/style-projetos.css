@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(211, 206, 206);
+}
+
+
+#nome-principal{
+    
+    text-align: center;
+    font-family: 'Templar Shield 3D Block';
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#subtitulo{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 38px;
+    font-family:'Wence';
+}
+
+
+#menu-de-navegacao{
+    text-align: center;
+    background-color: rgb(4, 4, 41);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.fonte-link{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-family: 'Wence';
+    font-size: 20px;
+    
+}
+h2{
+    font-family: 'Templar Shield 3D Block';
+    font-size: 50px; 
+    text-align: center;
+}
+
+#nome-blackjack{
+    text-align: center;
+    font-family: 'Wence';
+}
+
+#texto-blackjack{
+    background-color: rgb(0, 95, 139);
+    font-family: 'Wence';
+    color: white;
+    font-size: 30px;
+}
+
+
+footer{
+    background-color: rgb(4, 4, 41);
+    color: white;
+    font-family: 'Wence';
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+}
