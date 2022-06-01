@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: mediumvioletred;
+    padding: 6px;
+}
+
+#bolinho, #nome-loja, button{
+    display:inline-block;
+}
+
+button{
+    margin-left: 1150px;
+}
+
+#bolinho{
+    width: 20px;
+}
+
+.item-menu{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+#container{
+    display: flex;
+    padding-bottom: 450px;
+    flex-direction: column;
+    background-color: #f2d0e0;
+    justify-content: space-between;
+    
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.card p{
+    font-weight: bold;
+    font-size: 5px;
+    color: rgb(5, 5, 5);
+}
+.imagem-card{
+    margin-left: 2px;
+    border: 2px solid darkgray;
+    width: 150px;
+}
+
+#master{
+    display: flex;
+    
+}
+
+#rodape{
+    background-color: mediumvioletred;
+    padding: 6px;
+    text-align: center;
+}
