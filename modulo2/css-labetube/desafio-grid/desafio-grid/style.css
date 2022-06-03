@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 10px;  
+    color: white;
+    display: grid;
+    grid-template-rows: 30px 400px 150px 30px;
+    text-align: center;
+    
+    
+}
+
+
+.green-background {
+    background-color: green;
+}
+
+.yellow-background {
+    background-color: yellow;
+}
+
+.pink-background {
+    background-color: fuchsia;
+}
+
+.blue-background {
+    background-color: blue;
+}
+
+.red-background {
+    background-color: red;
+}
+
+.lightgreen-background {
+    background-color: lightgreen;
+}
+
+#purple-background {
+    background-color: purple;
+    
+    
+}
+
+#main-container{
+    display: grid;
+    grid-template-rows: 20% 50% 30% 20%;
+    text-align: center;
+    
+   
+}
+
+#top-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#content2{
+    background-color: blue;
+}
+
+#middle-container{
+    display: grid;
+   
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+#vertical-middle-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
