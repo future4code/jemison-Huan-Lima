@@ -1,0 +1,27 @@
+.littlecard-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    height: 75px;
+    justify-content:flex-start;
+}
+
+.littlecard-container > img {
+    width: 30px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+.littlecard-container > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+h4{
+    margin-right: 5px;
+}
