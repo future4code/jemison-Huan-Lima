@@ -82,15 +82,15 @@ function Post(props){
       
     }
 
-  
-
     let componenteComentario
 
     if(comentando) {
       componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
     }
 
+
   return(
+  
     <PostContainer>
       <PostHeader>
         <UserPhoto src={props.fotoUsuario} alt={'Imagem do usuario'}/>
@@ -112,8 +112,9 @@ function Post(props){
           valorContador={numeroComentarios}
         />
       </PostFooter>
-      {componenteComentario}
-    </PostContainer>
+        {componenteComentario}
+      </PostContainer>
+    
   )
 }
 

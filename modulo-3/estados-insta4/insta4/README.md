@@ -21,7 +21,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm surge`
 
-(spotted-knife.surge.sh)
+(https://certain-punishment.surge.sh/)
 
 ### `npm run build`
 
