@@ -21,7 +21,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm surge`
 
-(https://certain-punishment.surge.sh/)
+(https://picsum.photos/50/50)
 
 ### `npm run build`
 

@@ -38,6 +38,7 @@ const UserPhoto = styled.img`
 
 const PostPhoto = styled.img`
   width: 100%;
+  height: 250px;
 `
 
 function Post(props){
