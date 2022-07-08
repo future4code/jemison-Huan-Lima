@@ -8,6 +8,14 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `
+const Form = styled.form `
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+`
+
+
 function App() {
 
   //estados
@@ -49,6 +57,10 @@ function App() {
     const novoPost = {nomeUsuario: inputNome, fotoUsuario: inputFoto, fotoPost: inputPost}
     const novaListaDePosts = [...dadosDePosts, novoPost]
     setDados(novaListaDePosts)
+    setInputNome('')
+    setInputFoto('')
+    setInputPost('')
+    
   }
 
   const postagem = dadosDePosts.map((item, index) => {
@@ -64,7 +76,7 @@ function App() {
 
 return(
   <MainContainer>
-      <form>
+      <Form>
         <label>Nome:</label>
         <input
           placeholder='Insira um nome'
@@ -86,7 +98,7 @@ return(
           onChange = {handleInputPost}
         />
         <button onClick={addPost}>Adicionar</button>
-      </form>
+      </Form>
             {postagem}
   </MainContainer>)
 };
