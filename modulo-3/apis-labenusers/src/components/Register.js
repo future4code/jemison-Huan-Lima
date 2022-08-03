@@ -31,8 +31,7 @@ function Register () {
 
     const allUsers = users.map((user, index) => {
         return (
-            <div key={index}>{user.name}</div>,
-            <div key={index}>{user.email}</div>
+            <div key={index}>{user.name}</div>
         )
     })
 
@@ -50,7 +49,7 @@ function Register () {
 
     const getAllUsers = () => {
         axios.get(url, serviceHeaders)
-        .then((response) => {setUsers(response.data.result.list)})
+        .then((response) => {setInputName(response.data.result.list)})
         .catch((error) => {console.log(error.response)})
     }
     const body = {
@@ -79,7 +78,7 @@ function Register () {
         <div>
                 <input type="text" value={inputName} onChange={handleInputName} />
                 <input type="text" value={inputEmail} onChange={handleInputEmail} />
-                <button onClick={addUser}>
+                <button onClick={postCreateUser}>
                     Adicionar
                 </button>
                 <div>{allUsers}</div>
