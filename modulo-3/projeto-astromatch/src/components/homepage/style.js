@@ -6,6 +6,7 @@ export const DivPai = styled.div `
     justify-content: center;
     border-style: groove;
     max-width: 300px;
+    height: 500px;
     
 
 `
@@ -27,6 +28,9 @@ export const Header = styled.header `
 export const Main = styled.main `
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
     
     img{
         
@@ -36,6 +40,7 @@ export const Main = styled.main `
         
     }
     h4,h5{
+        border-style: groove;
         text-align: start;
         margin: 2px 2px 2px 2px;
         
@@ -44,6 +49,7 @@ export const Main = styled.main `
 
 `
 export const Footer = styled.footer`
+    background-color: aliceblue;
     border-style: groove;
     padding: 10px;
     display: flex;
