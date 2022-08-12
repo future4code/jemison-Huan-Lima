@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminHomePage from "../pages/admin-home-page/AdminHomePage";
 import ApplicationsFormPage from "../pages/applications-form-page/ApplicationsFormPage";
@@ -29,5 +29,5 @@ function Router() {
     );
 }
 
-export default Router();
+export default Router;
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function TripDetailsPage(){
 
@@ -7,4 +7,4 @@ function TripDetailsPage(){
     )
 }
 
-export default TripDetailsPage();
+export default TripDetailsPage;
