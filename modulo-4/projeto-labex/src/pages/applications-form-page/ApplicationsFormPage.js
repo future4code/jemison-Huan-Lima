@@ -13,9 +13,9 @@ function ApplicationsFormPage(){
     return(
         <DivPai>
             <Header>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'/>
+                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
                 <h1>SEJA UM VIAJANTE ESPACIAL</h1>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'/>
+                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
             </Header>
             <Main>
                 <h2>CANDIDATAR-SE A UMA VAGA</h2>

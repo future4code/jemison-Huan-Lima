@@ -17,7 +17,7 @@ function HomePage(){
     return(
         <DivPai>
             <Header>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'/>
+                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png' alt="logo"/>
                 <h2>LabeX</h2>
             </Header>
             <Main>
