@@ -24,7 +24,7 @@ export const Header = styled.header `
 
 `
 
-export const Main = styled.main `
+export const Form = styled.form `
     border-style: groove;
     margin-top: 80px;
     margin-bottom: 20px;
@@ -34,9 +34,13 @@ export const Main = styled.main `
     align-items: center;
     gap: 10px;
     padding: 30px;
+    button{
+        width: 120px;
+        margin-top: 25px;
+    }
     button:hover{
         background-color: grey;
-        
+           
     }
     div{
         display: flex;
@@ -44,22 +48,6 @@ export const Main = styled.main `
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-    }
-
-
-`
-export const Footer = styled.footer `
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    button:hover{
-        background-color: grey;
-        
-    }
-    button{
-        width: 150px;
     }
 
 

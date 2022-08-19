@@ -7,7 +7,7 @@ export function useGetTrips() {
     const [trips, setTrips] = useState([])
 
     useEffect(() => {
-        axios.get(`${BASE_URL}trips`)
+        axios.get(`${BASE_URL}huan-lima-jemison/trips`)
         .then(response => {
             setTrips(response.data.trips)})
         .catch(error => {
