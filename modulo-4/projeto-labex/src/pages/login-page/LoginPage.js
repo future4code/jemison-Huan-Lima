@@ -7,7 +7,7 @@ import { BASE_URL } from "../../constants/constants";
 
 function LoginPage(){
 
-    const [body, onChange] = useForm({email:"", password:""})
+    const [body, onChange, clear] = useForm({email:"", password:""})
     
     const navigate = useNavigate();
 
@@ -17,14 +17,16 @@ function LoginPage(){
     
     const login = (event) => {
         event.preventDefault()
+
         axios.post(`${BASE_URL}darvas/login`, body)
         .then((response) => {
-            console.log(response.data);
+            localStorage.setItem("token",response.data.token)
+            navigate("/admin/trips/:id")
         }).catch((error) => {
-            console.log("error")
+            console.log(error.message)
         })
-        console.log(body)
-        navigate("/admin/trips/:id")
+        clear()
+        
     }
      
     return(
@@ -62,6 +64,7 @@ function LoginPage(){
                         onChange={onChange}
                         required
                         pattern="^.{6,}"
+                        title="mínimo 6 caracteres"
                     />
                     
                 </div>

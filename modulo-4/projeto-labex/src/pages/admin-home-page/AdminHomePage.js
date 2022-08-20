@@ -1,5 +1,6 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom';
+import { TripCardDetail } from "../../components/trip-card-detail/TripCardDetail";
 import { DivPai, Footer, Header, Main } from "./styled";
 
 function AdminHomePage(){
@@ -7,7 +8,9 @@ function AdminHomePage(){
     
     const navigate = useNavigate();
 
+
     const goToLogout = () => {
+        localStorage.clear()
         navigate("/login")
     }
 
@@ -23,7 +26,7 @@ function AdminHomePage(){
                 <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png' alt="logo"/>
             </Header>
             <Main>
-                
+                <TripCardDetail/>
             </Main>
             <Footer>
                 <button onClick={goToLogout} >Sair</button>
