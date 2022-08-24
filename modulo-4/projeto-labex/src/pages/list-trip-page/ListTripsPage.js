@@ -5,9 +5,7 @@ import { TripCard } from "../../components/trip-card/TripCard";
 
 
 function ListTripPage(){
-
-    
-
+ 
     const navigate = useNavigate();
 
     const goToHome = () => {
