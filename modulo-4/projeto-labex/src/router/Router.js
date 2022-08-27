@@ -20,8 +20,8 @@ function Router() {
                 <Route path='/login' element={<LoginPage/>}/>
                 <Route path='/trips/list' element={<ListTripsPage/>}/>
                 <Route path='/admin/trips/create' element={<CreateTripPage/>}/>
-                <Route path='/admin/trips/:id' element={<AdminHomePage/>}/>
-                <Route path='/admin/trips/list' element={<TripDetailsPage/>}/>
+                <Route path='/admin/trips/list' element={<AdminHomePage/>}/>
+                <Route path='/admin/trips/:id' element={<TripDetailsPage/>}/>
 
             </Routes>
         

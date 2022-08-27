@@ -39,15 +39,24 @@ export const Card = styled.button `
     flex-direction: column;
     border-style: groove;
     border-color: blue;
-    justify-items: center;
+    justify-content: space-between;
     align-items: center;
     background-color: antiquewhite;
     width: 100%;
-    height: 250px;
-    :hover{
-        background-color: grey;   
+    height: 350px;
+    
+    button{
+        width: 200px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
-    cursor: pointer;
+
+    button:hover{
+        cursor: pointer;
+    }
+    
     
 `
 

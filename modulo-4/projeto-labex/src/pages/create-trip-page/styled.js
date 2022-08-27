@@ -24,7 +24,7 @@ export const Header = styled.header `
 
 `
 
-export const Main = styled.main `
+export const Form = styled.form `
     border-style: groove;
     margin-top: 80px;
     margin-bottom: 20px;

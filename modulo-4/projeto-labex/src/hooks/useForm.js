@@ -14,5 +14,5 @@ export const useForm = (initialState) => {
     const clear = () => {
         setform(initialState)
     }
-    return[form, onChange, clear]
+    return {form, onChange, clear}
 }

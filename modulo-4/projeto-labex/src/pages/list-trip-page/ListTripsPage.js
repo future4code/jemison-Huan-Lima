@@ -18,7 +18,7 @@ function ListTripPage(){
 
     return(
         <DivPai>
-            <Header>
+          <Header>
                 <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
                 <h1>VIAGENS DISPONÍVEIS</h1>
                 <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>

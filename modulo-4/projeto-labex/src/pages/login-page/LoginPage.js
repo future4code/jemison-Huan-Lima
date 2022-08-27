@@ -7,7 +7,9 @@ import { BASE_URL } from "../../constants/constants";
 
 function LoginPage(){
 
-    const [body, onChange, clear] = useForm({email:"", password:""})
+    const {form, onChange, clear} = useForm({email:"", password:""})
+
+ 
     
     const navigate = useNavigate();
 
@@ -18,10 +20,10 @@ function LoginPage(){
     const login = (event) => {
         event.preventDefault()
 
-        axios.post(`${BASE_URL}darvas/login`, body)
+        axios.post(`${BASE_URL}/login`, form)
         .then((response) => {
             localStorage.setItem("token",response.data.token)
-            navigate("/admin/trips/:id")
+            navigate("/admin/trips/list")
         }).catch((error) => {
             console.log(error.message)
         })
@@ -44,7 +46,7 @@ function LoginPage(){
                         name="email"
                         id="email"
                         type={'email'} 
-                        value = {body.email}
+                        value = {form.email}
                         placeholder="Insira seu e-mail"
                         onChange={onChange}
                         required
@@ -59,7 +61,7 @@ function LoginPage(){
                         name="password"
                         id="password"
                         type={'password'} 
-                        value = {body.password}
+                        value = {form.password}
                         placeholder="Insira sua senha de acesso"
                         onChange={onChange}
                         required

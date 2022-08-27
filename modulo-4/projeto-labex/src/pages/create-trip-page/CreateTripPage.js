@@ -1,13 +1,47 @@
 import React from "react";
-import { DivPai, Footer, Header, Main } from "./styled";
+import { DivPai, Form, Header} from "./styled";
 import {useNavigate} from 'react-router-dom'
+import { useForm } from "../../hooks/useForm";
+import axios from "axios";
+import { BASE_URL, HeadersCreateTrip } from "../../constants/constants";
 
 function CreateTripPage(){
 
+    const {form, onChange, clear} = useForm(
+            {name:'', 
+            planet:'', 
+            date:'',
+            description:'', 
+            durationInDays:''})
+    
+    
+    
     const navigate = useNavigate();
 
     const goToTrips = () => {
-        navigate("/admin/trips/:id")
+        navigate("/admin/trips/list")
+    }
+
+    const header = {
+        headers: {
+            auth:localStorage.getItem("token")
+        }
+    }
+
+
+    const createTrip = (event) => {
+        event.preventDefault()
+
+        
+        console.log(form)
+        axios.post(`${BASE_URL}/trips`, form, header)
+        .then((response) => {
+            alert('Viagem criada com sucesso!')
+        })
+        .catch((error) => {
+            alert(error.message)
+        })
+        clear()
     }
 
 
@@ -18,34 +52,71 @@ function CreateTripPage(){
                 <h1>CADASTRAR UMA NOVA VIAGEM</h1>
                 <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
             </Header>
-            <Main>
+            <Form onSubmit={createTrip}>
                 <h2>INFORMAR DADOS DA NOVA VIAGEM</h2>
                 <div>
-                    <label>Nome:</label>
-                    <input type={'text'} placeholder="Nome da viagem"/>
+                    <label htmlFor="nome">Nome:</label>
+                    <input 
+                        
+                        name= "name"
+                        type={'text'} 
+                        value={form.name}
+                        onChange={onChange}
+                        placeholder="Nome da viagem"
+                        required
+                    />
                 </div>
                 <div>
-                    <label>Planeta:</label>
-                    <input type={'text'} placeholder="Planeta de destino"/>
+                    <label htmlFor="planeta">Planeta:</label>
+                    <input 
+                        name="planet"
+                        type={'text'}
+                        value={form.planet}
+                        placeholder="Planeta de destino"
+                        onChange={onChange}
+                        required
+                    />
                 </div>
                 <div>
-                    <label>Data:</label>
-                    <input type={'date'} placeholder="Data de partida"/>
+                    <label htmlFor="data">Data:</label>
+                    <input 
+                        name='date'
+                        type={'date'} 
+                        value={form.date}
+                        onChange={onChange}
+                        placeholder="Data de partida"
+                        required
+                    />
                 </div>
                 <div>
-                    <label>Descrição:</label>
-                    <input type={'text'} placeholder="Descreva a viagem"/>
+                    <label htmlFor="descricao">Descrição:</label>
+                    <input 
+                        name='description'
+                        type={'text'} 
+                        value={form.description}
+                        onChange={onChange}
+                        placeholder="Descreva a viagem"
+                        required
+                    />
                 </div>
                 <div>
-                    <label>Duração:</label>
-                    <input type={'number'} placeholder="Duração em dias"/>
+                    <label htmlFor="duracao">Duração:</label>
+                    <input 
+                        name="durationInDays"
+                        type={'number'} 
+                        value={form.durationInDays}
+                        onChange={onChange}
+                        placeholder="Duração em dias"
+                        required
+                    />
+                </div>
+                <div>
+                    <button onClick={goToTrips} >Voltar</button>
+                    <button onSubmit={createTrip}>Cadastrar</button>
                 </div>
                 
-            </Main>
-            <Footer>
-                <button onClick={goToTrips} >Voltar</button>
-                <button>Cadastrar</button>
-            </Footer>
+            </Form>
+            
         </DivPai>
     )
 }
