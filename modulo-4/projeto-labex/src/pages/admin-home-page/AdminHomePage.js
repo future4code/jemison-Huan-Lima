@@ -1,11 +1,13 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom';
 import { BASE_URL } from "../../constants/constants";
+import { useProtectPage } from "../../hooks/useProtectPage";
 import useRequestData from "../../hooks/useRequestData/useRequestData";
 import { Card, DivPai, Footer, Header, Main} from "./styled";
 
 function AdminHomePage(){
 
+    useProtectPage()
     
     const navigate = useNavigate();
 
@@ -30,6 +32,13 @@ function AdminHomePage(){
                         <section>
                             <h4>Planeta: {trip.planet}</h4>
                         </section>
+                        <section>
+                            <h4>Descrição: {trip.description}</h4>
+                        </section>
+                        <section>
+                            <h4>Data: {trip.date}</h4>
+                        </section>
+                        
                     </Card>
                     
                 </div>
@@ -51,9 +60,9 @@ function AdminHomePage(){
         <DivPai>
 
             <Header>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
                 <h1>Viagens</h1>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
             </Header>
 
             

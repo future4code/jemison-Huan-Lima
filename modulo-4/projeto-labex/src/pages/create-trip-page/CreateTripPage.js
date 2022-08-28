@@ -3,7 +3,7 @@ import { DivPai, Form, Header} from "./styled";
 import {useNavigate} from 'react-router-dom'
 import { useForm } from "../../hooks/useForm";
 import axios from "axios";
-import { BASE_URL, HeadersCreateTrip } from "../../constants/constants";
+import { BASE_URL} from "../../constants/constants";
 
 function CreateTripPage(){
 
@@ -48,9 +48,9 @@ function CreateTripPage(){
     return(
         <DivPai>
             <Header>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
                 <h1>CADASTRAR UMA NOVA VIAGEM</h1>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
             </Header>
             <Form onSubmit={createTrip}>
                 <h2>INFORMAR DADOS DA NOVA VIAGEM</h2>
@@ -64,6 +64,8 @@ function CreateTripPage(){
                         onChange={onChange}
                         placeholder="Nome da viagem"
                         required
+                        pattern="^.{4,}"
+                        title='Informe seu nome completo'
                     />
                 </div>
                 <div>
@@ -97,6 +99,8 @@ function CreateTripPage(){
                         onChange={onChange}
                         placeholder="Descreva a viagem"
                         required
+                        pattern="^.{5,}"
+                        title='Descreva melhor a viagem'
                     />
                 </div>
                 <div>

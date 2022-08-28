@@ -34,9 +34,9 @@ function LoginPage(){
     return(
         <DivPai>
             <Header>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
                 <h1>ÁREA ADMINISTRATIVA</h1>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
             </Header>
             <Form onSubmit={login}>
                 <h2>ACESSO RESTRITO</h2>
@@ -51,6 +51,7 @@ function LoginPage(){
                         onChange={onChange}
                         required
                         pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Insira um e-mail válido"
                     />
                     
                 </div>

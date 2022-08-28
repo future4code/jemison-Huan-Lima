@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { BASE_URL } from '../../constants/constants';
 import useRequestData from '../../hooks/useRequestData/useRequestData';
@@ -8,12 +8,7 @@ function TripDetailsPage(){
 
     const id = useParams()
     const navigate = useNavigate();
-    const[decision, setDecision] = useState(true)
-
-    const approve = (event) => {
-        setDecision(event.target.value)
-    }
-
+     
 
     const [data, isLoading, error] = useRequestData(`${BASE_URL}/trip/${id.id}`)
 
@@ -36,11 +31,11 @@ function TripDetailsPage(){
                             <p>Profissão: {candidate.profession}</p>
                         </section>
                         <section>
-                            <p>Porque mereço ir? {candidate.applicationText}</p>
+                            <p>Porque mereço ir: {candidate.applicationText}</p>
                         </section>
                         <section>
-                            <button onClick={approve}>Aprovar</button>
-                            <button value={false} onClick={approve} onChange={setDecision}>Reprovar</button>
+                            <button>Aprovar</button>
+                            <button>Reprovar</button>
                         </section>
                     </Card>  
                     
@@ -52,17 +47,20 @@ function TripDetailsPage(){
     })
 
 
-    const goToCreateTrip = () => {
-        navigate("/admin/trips/create")
+    const goToTripsList = () => {
+        navigate("/admin/trips/list")
+    }
+    const goToLogout = () => {
+        navigate("/login")
     }
 
     return(
         <DivPai>
 
             <Header>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
                 <h1>Escolha os candidatos</h1>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
             </Header>
 
             
@@ -77,7 +75,8 @@ function TripDetailsPage(){
                     
             </Main>
             <Footer>
-                
+                    <button onClick={goToTripsList}>Voltar para viagens</button>
+                    <button onClick={goToLogout}>Sair</button>
             </Footer>
             
 

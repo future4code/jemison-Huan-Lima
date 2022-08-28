@@ -38,7 +38,7 @@ function ApplicationsFormPage(){
         event.preventDefault()
 
 
-        axios.post(`${BASE_URL}huan-lima-jemison/trips/${idTrip}/apply`, form)
+        axios.post(`${BASE_URL}/trips/${idTrip}/apply`, form)
         .then((response) => {
             alert("Cadastro realizado com sucesso")      
         }).catch((error) => {
@@ -57,9 +57,9 @@ function ApplicationsFormPage(){
     return(
         <DivPai>
             <Header>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
                 <h1>SEJA UM VIAJANTE ESPACIAL</h1>
-                <img src='https://www.pngmart.com/files/6/Rocket-PNG-Clipart.png'alt="logo"/>
+                <img src='https://svgsilh.com/svg_v2/154997.svg'alt="logo"/>
             </Header>
             <Form onSubmit={register}>
 
@@ -88,6 +88,8 @@ function ApplicationsFormPage(){
                         type={'text'} 
                         placeholder="Insira seu nome"
                         required
+                        pattern="^.{4,}"
+                        title='Informe seu nome completo'
                     />
                 </div>
                 <div>
@@ -112,6 +114,8 @@ function ApplicationsFormPage(){
                         type={'text'} 
                         placeholder="Descreva"
                         required
+                        pattern="^.{10,}"
+                        title='Escreva mais um pouco sobre você'
                     />
                 </div>
                 <div>
@@ -124,6 +128,8 @@ function ApplicationsFormPage(){
                         type={'text'} 
                         placeholder="Informe sua profissão"
                         required
+                        pattern="^.{3,}"
+                        title='Pelo menos 3 caracteres'
                     />
                 </div>
                 <div>
